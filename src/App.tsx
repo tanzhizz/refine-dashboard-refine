@@ -108,7 +108,10 @@ function App() {
             resources={[
               {
                 name: "properties",
-                list: MuiInferencer,
+                list: AllProperties,
+                show: PropertyDetails,
+                create: CreateProperty,
+                edit: EditProperty,
                 icon: <VillaOutlined />,
                 // edit: MuiInferencer,
                 // show: MuiInferencer,
@@ -116,23 +119,24 @@ function App() {
                 // canDelete: true,
               },
               {
-                name: 'agent',
-                list: MuiInferencer,
+                name: 'agents',
+                list: Agents,
+                show:AgentProfile,
                 icon: <PeopleAltOutlined />,
               },
               {
-                name: 'review',
-                list: MuiInferencer,
+                name: 'reviews',
+                list: Home,
                 icon: <StarOutlineRounded />,
               },
               {
-                name: 'message',
-                list: MuiInferencer,
+                name: 'messages',
+                list: Home,
                 icon: <ChatBubbleOutline />,
               },
               {
                 name: 'my-profile',
-                list: MuiInferencer,
+                list: MyProfile,
                 options: {
                   label: "My profile"
                 },
